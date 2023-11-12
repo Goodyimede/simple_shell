@@ -61,4 +61,5 @@ int systemFunction(shelldata_t *mystrct, char **args);
 int verifyBuiltin(shelldata_t *mystrct, char **args);
 void evaluate(char **args, shelldata_t *mystrct, char *buffer);
 int _atoi(char *s);
+int main(int acc, char **avv)
 #endif
