@@ -63,4 +63,7 @@ void evaluate(char **args, shelldata_t *mystrct, char *buffer);
 int _atoi(char *s);
 int main(int acc, char **avv);
 char *selectMessage(shelldata_t mystrct);
+int number(int numb);
+char *parse_prompt(void);
+int manageNumbers(shelldata_t *mystrct, char *argument);
 #endif
