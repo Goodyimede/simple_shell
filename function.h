@@ -66,4 +66,6 @@ char *selectMessage(shelldata_t mystrct);
 int number(int numb);
 char *parse_prompt(void);
 int manageNumbers(shelldata_t *mystrct, char *argument);
+void releaseMemory(void *thepointer);
+
 #endif
