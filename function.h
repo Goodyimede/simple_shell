@@ -67,5 +67,8 @@ int number(int numb);
 char *parse_prompt(void);
 int manageNumbers(shelldata_t *mystrct, char *argument);
 void releaseMemory(void *thepointer);
+char *subEnv(shelldata_t *mystrct, char *envi_var);
+void releaseMemoryPointer(void **pointer);
+char *subtituteValue(shelldata_t *mystrct, int *id, char *str)
 
 #endif
