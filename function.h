@@ -72,4 +72,6 @@ void releaseMemoryPointer(void **pointer);
 char *subtituteValue(shelldata_t *mystrct, int *id, char *str);
 void signatureHandler(int num);
 char *stringify(int numbe);
+char **tokenize_words(char *string, const char *del);
+int writeCharacter(char character);
 #endif
