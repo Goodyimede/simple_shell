@@ -13,7 +13,7 @@
 void evaluate(char **args, shelldata_t *mystrct, char *buffer)
 {
 	char *cmd;
-	int updated;
+	int update;
 
 	if (*args == NULL || args == NULL)
 	{
@@ -25,22 +25,22 @@ void evaluate(char **args, shelldata_t *mystrct, char *buffer)
 	{
 		return;
 	}
-	updated = File(cmd);
-	if (updated == 0)
+	update = File(cmd);
+	if (update == 0)
 	{
 		mystrct->code_stat = 126;
 		mystrct->error_digit = 13;
 		issue(mystrct);
 		return;
 	}
-	if (updated == 1)
+	if (update == 1)
 	{
 		run(cmd, args, mystrct, buffer);
 		return;
 	}
 	if (getCurrentDir(cmd, args, buffer, mystrct) == 1)
 		return;
-	mystrct->cmd_path = select(cmd, mystrct);
+	mystrct->cmd_path = choose(cmd, mystrct);
 	if (mystrct->cmd_path != NULL)
 	{
 		run(mystrct->cmd_path, args, mystrct, buffer);

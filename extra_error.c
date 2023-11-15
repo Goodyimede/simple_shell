@@ -27,9 +27,9 @@ void additionalError(shelldata_t *mystrct, char *more)
 	more_size = _strlen(more);
 
 	ag = malloc(msg_size + num_size + 3);
-	ag = _strcpy(au, mystrct->argv[0]);
-	ag = _strcat(au, ": ");
-	ag = _strcat(au, num);
+	ag = _strcpy(ag, mystrct->argv[0]);
+	ag = _strcat(ag, ": ");
+	ag = _strcat(ag, num);
 
 	ag2 = malloc(_strlen(msg) + more_size + 3);
 	ag2 = _strcpy(ag2, msg);

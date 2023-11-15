@@ -18,7 +18,7 @@ void initPrompt(shelldata_t *mystrct)
 		getInput(mystrct);
 
 		env_path = getEnv("PATH");
-		isCurrPath(env_path, mystrct);
+		CurrentPath(env_path, mystrct);
 
 		mystrct->env = env_path;
 		buffer = parse_prompt();
