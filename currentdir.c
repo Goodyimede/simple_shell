@@ -6,14 +6,14 @@
  *
  * @command: Command to execute is passed here
  * @argu: Argument passed with the command is passed here
- * @buff: the buffer received
+ * @buf: the buffer received
  * @mystrct: a struct that contains general information
  * about the shell
  *
  * Return: a number which equate the status of the program
  **/
 
-int getCurrentDir(char *command, char **argu, char *buff, shelldata_t *mystrct)
+int getCurrentDir(char *command, char **argu, char *buf, shelldata_t *mystrct)
 {
 
 	if (mystrct->cur_path == 0)
@@ -23,7 +23,7 @@ int getCurrentDir(char *command, char **argu, char *buff, shelldata_t *mystrct)
 
 	if (Executable(command) == 1)
 	{
-		run(command, argu, mystrct, buff);
+		run(command, argu, mystrct, buf);
 		return (1);
 	}
 
