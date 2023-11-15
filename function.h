@@ -53,7 +53,7 @@ void issue(shelldata_t *mystrct);
 char *selectMessage(shelldata_t mystrct);
 void additionalError(shelldata_t *mystrct, char *more);
 char *getEnv(const char *variable);
-char *select(char *drtname, shelldata_t *mystrct);
+char *choose(char *dirname, shelldata_t *mystrct);
 void CurrentPath(char *path, shelldata_t *mystrct);
 void fetchFullEnv(void);
 void binaryEnv(shelldata_t *mystrct, char **args);

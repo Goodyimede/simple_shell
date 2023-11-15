@@ -1,12 +1,12 @@
 #include "function.h"
 #include "shelldata.h"
 /**
- * select - function built to find directories when needed
- * @drtname: directory name input
+ * choose - function built to find directories when needed
+ * @dirname: directory name input
  * @mystrct: struct that defines a certain data type
  * Return: pointer to a string
  */
-char *select(char *drtname, shelldata_t *mystrct)
+char *choose(char *dirname, shelldata_t *mystrct)
 {
 	char *path, *path_temp, *tk, *del;
 	int mask;
@@ -21,12 +21,12 @@ char *select(char *drtname, shelldata_t *mystrct)
 
 	tk = strtok(path, ":");
 
-	mask = _strlen(drtname) + 2;
+	mask = _strlen(dirname) + 2;
 	del = malloc(mask * sizeof(char));
 	del = _strcpy(del, "/");
-	del = _strcat(del, drtname);
+	del = _strcat(del, dirname);
 
-	while (tok != NULL)
+	while (tk != NULL)
 	{
 		path_temp = malloc(_strlen(tk) + mask);
 		path_temp = _strcpy(path_temp, tk);
