@@ -1,7 +1,7 @@
 #include "function.h"
 #include "shelldata.h"
 /**
- * parse_prompt - function that uses the getline  function to read line of prompt
+ * parse_prompt - function that uses the getline to read line of prompt
  *
  * Description: by pressing cntrl C it tiggers end of file
  *

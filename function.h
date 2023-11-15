@@ -19,7 +19,7 @@ char *stringify(int numbe);
 int Numeric(unsigned int numb);
 int hasLetter(char *string);
 char **tokenize_words(char *string, const char *del);
-char *mergeWords(char *w1, char *w2, char *w3, const char *del);
+char *mergeWords(char *wo1, char *wo2, char *wo3, const char *de1);
 char *parse_prompt(void);
 void initpromt(shelldata_t *mystrct);
 void signatureHandler(int num);

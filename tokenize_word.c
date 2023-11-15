@@ -1,7 +1,7 @@
 #include "function.h"
 #include "shelldata.h"
 /**
- * tokenize_words - this function Splits a string into words base on a delimeter
+ * tokenize_words - function Splits a string into words base on a delimeter
  *
  * @string: string to be splitted
  * @del: Delimiter to be used

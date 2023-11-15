@@ -4,7 +4,7 @@
  * selectMessage - check for error code and select
  * a match with the error code gotten or received
  *
- * @mystrct: a struct 
+ * @mystrct: a struct
  *
  * Return: a character
  **/
