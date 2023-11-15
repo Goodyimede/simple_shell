@@ -1,14 +1,14 @@
 #include "function.h"
 #include "shelldata.h"
 /**
- * initPrompt - This functn replaces the main loop of the
+ * initiatePrompt - This function represents the main loop of the
  * interactive prompt
  *
- * @mystrct: Struct for all
+ * @mystrct - Struct of general information
  *
- * Return: Buffer found
+ * Return: Buffer gotten from stdin or NULL if EOF was found
  **/
-void initPrompt(shelldata_t *mystrct)
+void initiatePrompt(shelldata_t *mystrct)
 {
 	char *buffer, **args, *env_path;
 

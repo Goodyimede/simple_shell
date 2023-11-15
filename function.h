@@ -21,7 +21,7 @@ int hasLetter(char *string);
 char **tokenize_words(char *string, const char *del);
 char *mergeWords(char *wo1, char *wo2, char *wo3, const char *de1);
 char *parse_prompt(void);
-void initpromt(shelldata_t *mystrct);
+void initiatePrompt(shelldata_t *mystrct);
 void signatureHandler(int num);
 int writeCharacter(char character);
 int display(char *message);
