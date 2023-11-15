@@ -17,7 +17,7 @@ char *subtituteValue(shelldata_t *mystrct, int *id, char *str)
 	i = *id;
 	i++;
 
-	param = exchange(mystrct, id, str + i);
+	par = exchange(mystrct, id, str + i);
 	if (par == NULL)
 	{
 		str = _strcpy(str, "");

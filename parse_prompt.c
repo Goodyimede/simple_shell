@@ -21,5 +21,5 @@ char *parse_prompt(void)
 		return (NULL);
 	}
 
-	return (buffer);
+	return (buff);
 }

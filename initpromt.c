@@ -33,8 +33,8 @@ void initPrompt(shelldata_t *mystrct)
 		{
 			args = tokenize_words(buffer, " \t\n");
 
-			mytype->thearguments = args;
-			mytype->buf = buffer;
+			mystrct->thearguments = args;
+			mystrct->buf = buffer;
 			patternAnalysis(mystrct, args);
 			evaluate(args, mystrct, buffer);
 

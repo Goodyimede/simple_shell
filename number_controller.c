@@ -14,7 +14,7 @@ int manageNumbers(shelldata_t *mystrct, char *argument)
 
 	trackers = _atoi(argument);
 
-	if (tracker < 0 || hasLetter(argument))
+	if (trackers < 0 || hasLetter(argument))
 	{
 		mystrct->code_stat = 2;
 		mystrct->error_digit = 133;
