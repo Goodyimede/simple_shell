@@ -27,7 +27,7 @@ int main(int acc, char **avv)
 	mystrct->argc = acc;
 	mystrct->argv = avv;
 	mystrct->it_mode = isatty(0) == 1;
-	begin(mystrct);
+	start(mystrct);
 
 	status = mystrct->code_stat;
 

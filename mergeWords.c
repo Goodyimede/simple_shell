@@ -18,7 +18,7 @@ char *mergeWords(char *wo1, char *wo2, char *wo3, const char *de1)
 	size1 = size2 = size3 = del_size = 0;
 
 	if (wo2 != NULL)
-		size2 = _strlen(w2);
+		size2 = _strlen(wo2);
 	else
 		wo2 = "";
 
@@ -27,7 +27,7 @@ char *mergeWords(char *wo1, char *wo2, char *wo3, const char *de1)
 	else
 		wo1 = "";
 	if (wo3 != NULL)
-		size3 = _strlen(w3);
+		size3 = _strlen(wo3);
 	else
 		wo3 = "";
 	if (de1 != NULL)
