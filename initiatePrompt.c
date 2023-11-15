@@ -4,7 +4,7 @@
  * initiatePrompt - This function represents the main loop of the
  * interactive prompt
  *
- * @mystrct - Struct of general information
+ * @mystrct: Structure of general information
  *
  * Return: Buffer gotten from stdin or NULL if EOF was found
  **/
